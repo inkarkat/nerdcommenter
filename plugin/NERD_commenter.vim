@@ -1135,6 +1135,7 @@ function! NERDComment(mode, type) range
     else
         silent! call repeat#set("\<Plug>NERDCommenter". a:type)
     endif
+    silent! call visualrepeat#set("\<Plug>NERDCommenter". a:type)
 endfunction
 
 " Function: s:PlaceDelimitersAndInsBetween() function {{{2
